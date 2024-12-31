@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,11 +16,11 @@ const Navbar = () => {
                 {/* Nav Links */}
                 <nav className="hidden md:block">
                     <ul className="flex space-x-8 text-white font-medium">
-                        <li className="hover:text-blue-500 cursor-pointer">Home</li>
+                        <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/"}>Home</NavLink></li>
                         <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
                         <li className="hover:text-blue-500 cursor-pointer">Dashboard</li>
-                        <li className="hover:text-blue-500 cursor-pointer">Our Menu</li>
-                        <li className="hover:text-blue-500 cursor-pointer">Our Shop</li>
+                        <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/ourMenu"}>Our menu</NavLink></li>
+                        <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/order"}>Our Order</NavLink></li>
                         <li className="hover:text-blue-500 cursor-pointer">Some nav item</li>
                     </ul>
                 </nav>
