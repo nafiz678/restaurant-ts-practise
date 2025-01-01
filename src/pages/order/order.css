@@ -1,0 +1,21 @@
+
+.custom-tabs .react-tabs__tab--selected {
+    background-color: inherit;
+    color: #ffa500 !important; 
+    border: none; 
+}
+.react-tabs__tab--selected{
+    color: #ffa500 !important;
+}
+
+.custom-tabs .react-tabs__tab--selected:focus {
+    outline: none;
+} 
+
+.custom-tabs .react-tabs__tab {
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-tabs .react-tabs__tab:hover {
+    color: #ffa500;
+}

@@ -20,7 +20,7 @@ const Navbar = () => {
                         <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
                         <li className="hover:text-blue-500 cursor-pointer">Dashboard</li>
                         <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/ourMenu"}>Our menu</NavLink></li>
-                        <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/order"}>Our Order</NavLink></li>
+                        <li className="hover:text-blue-500 cursor-pointer"><NavLink to={"/order/salad"}>Our Order</NavLink></li>
                         <li className="hover:text-blue-500 cursor-pointer">Some nav item</li>
                     </ul>
                 </nav>
